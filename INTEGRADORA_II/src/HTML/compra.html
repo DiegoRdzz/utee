@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureLab - Pago</title>
+    <link rel="stylesheet" href="../CSS/compra.css"> <!-- Enlaza tu archivo CSS aquí -->
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="menu-navegacion">
+        <div class="logo">
+            <img src="../images/integradora2.png" alt="Logo SecureLab">
+        </div>
+        <ul class="enlaces-navegacion">
+            <li><a href="../HTML/venta.html">Inicio</a></li>
+            <li><a href="../HTML/registro.html" class="boton-iniciar-sesion">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de pago -->
+    <section id="seccion-pago" class="seccion-pago">
+        <div class="contenedor">
+            <h1>Finaliza tu compra</h1>
+            <p class="descripcion-pago">Completa el siguiente formulario para adquirir SecureLab y garantizar la seguridad de tus muestras de laboratorio.</p>
+
+            <!-- Resumen del producto -->
+            <div class="resumen-producto">
+                <h2>Resumen del producto</h2>
+                <ul class="lista-resumen">
+                    <li><strong>Producto:</strong> SecureLab - Monitoreo Inteligente</li>
+                    <li><strong>Precio:</strong> $100.00 USD</li>
+                    <li><strong>Envío:</strong> Gratis</li>
+                </ul>
+            </div>
+
+            <!-- Métodos de pago -->
+            <div class="metodos-pago">
+                <h2>Métodos de pago</h2>
+                <div class="iconos-pago">
+                    <img src="../images/visa.png" alt="Visa">
+                    <img src="../images/mastercard.png" alt="Mastercard">
+                    <img src="../images/paypal.png" alt="PayPal">
+                    <img src="../images/bitcoin.png" alt="Bitcoin">
+                </div>
+            </div>
+
+            <!-- Formulario de pago -->
+            <div class="formulario-pago">
+                <h2>Información de pago</h2>
+                <form class="formulario">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="tarjeta">Número de tarjeta:</label>
+                        <input type="text" id="tarjeta" name="tarjeta" placeholder="Ingresa tu número de tarjeta" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="fecha">Fecha de expiración:</label>
+                        <input type="text" id="fecha" name="fecha" placeholder="MM/AA" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Ingresa el CVV" required>
+                    </div>
+                    <button type="submit" class="boton-pagar">Pagar ahora</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p>&copy; 2024 SecureLab. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

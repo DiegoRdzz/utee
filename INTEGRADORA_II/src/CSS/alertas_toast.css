@@ -1,0 +1,67 @@
+/* Estilos para el toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white; /* Texto blanco */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Oculto por defecto */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    max-width: 300px; /* Ancho máximo */
+    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s; /* Animaciones */
+}
+
+.toast.show {
+    display: block; /* Muestra el toast */
+}
+
+/* Colores según el tipo de alerta */
+.toast.info {
+    background-color: #2196F3; /* Azul para información */
+}
+
+.toast.warning {
+    background-color: #FF9800; /* Naranja para advertencias */
+}
+
+.toast.error {
+    background-color: #F44336; /* Rojo para errores */
+}
+
+.toast.success {
+    background-color: #4CAF50; /* Verde para éxito */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación de salida */
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(20px); }
+}
+
+/* Estilos para el badge (opcional) */
+.badge {
+    background-color: #F44336; /* Rojo para indicar alertas */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px; /* Tamaño más pequeño */
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

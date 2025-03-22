@@ -1,0 +1,42 @@
+/* Estilos para inputs con error */
+.input-error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+/* Mensaje de error */
+.mensaje-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Oculto por defecto */
+}
+
+/* Estilo para mostrar el mensaje de error */
+.mensaje-error.visible {
+    display: block;
+}
+
+
+
+/*ALERTAS PARA MOSTRAR INFO DE LOS SENSORES DE LA BD*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#alert-box {
+    background-color: #ffcccc;
+    border: 1px solid red;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#alert-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+

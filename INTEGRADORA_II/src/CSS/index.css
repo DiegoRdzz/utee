@@ -1,0 +1,205 @@
+/* Estilos existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4ea;
+}
+
+main {
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacio entre el h1 y el contenido centrado */
+}
+
+#info-centro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: auto; /* Centra el div horizontalmente */
+    position: absolute; /* Lo posiciona en el centro */
+    top: 50%; /* Lo mueve al 50% del alto */
+    left: 50%; /* Lo mueve al 50% del ancho */
+    transform: translate(-50%, -50%); /* Ajusta el centrado */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#info-centro h2 {
+    margin-bottom: 10px;
+    color: #266965;
+}
+
+#info-centro p {
+    color: #6b6b6b;
+    font-size: 16px;
+    margin: 0 auto; /* Centra el párrafo */
+}
+
+/* Resto del CSS existente */
+#menu-lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100vh;
+    border-radius: 0px 20px 20px 0;
+    position: relative;
+    transition: all .5s;
+    min-height: 82px;
+    z-index: 2;
+}
+
+#menu-lateral-contenido {
+    padding: 12px;
+}
+
+#Usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#foto {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#informacion-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+#informacion-usuario span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+}
+
+.menu-items {
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.menu-items.active {
+    background-color: #e6e6e6;
+}
+
+.menu-items:hover:not(.active),
+#salir_btn:hover {
+    background-color: #ccc;
+}
+
+.menu-items a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #266965;
+}
+
+.menu-items.active a {
+    color: #266965;
+}
+
+.menu-items a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+#salir {
+    border-top: 1px solid;
+    padding: 12px;
+    color: #266965;
+}
+
+#salir_btn {
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+    color: #266965;
+}
+
+#abrir_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #e6e6e6;
+    color: #266965;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#abrir_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #abrir_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-descripcion {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#menu-lateral.open-sidebar {
+    min-width: 15%;
+}
+
+#menu-lateral.open-sidebar .item-descripcion {
+    width: 150px;
+    height: auto;
+}
+
+#menu-lateral.open-sidebar .menu-items a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+

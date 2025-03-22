@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="../CSS/graficas.css"> <!--CSS DE GRAFICA-->
+  <link rel="stylesheet" href="../CSS/menu-gen.css"> <!--CSS DE MENU-->
+  <link rel="stylesheet" href="../CSS/alertas_toast.css">
+
+
+  <title>Gráfica en Tiempo Real</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+  <nav class="navbar">
+    <div class="logo">Grafica</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Graficas.html">Gráficas</a></li>
+      <li><a href="Alertas.html">Alertas</a></li>
+      <li><a href="info_usuario.html">Configuración</a></li>
+    </ul>
+  </nav>
+
+  <h1>Monitoreo de Temperatura y Humedad</h1>
+  <canvas id="myChart" width="800" height="350"></canvas>
+
+  <!-- Badge en la barra de navegación -->
+<!-- Toast Notification -->
+<div id="toast" class="toast">
+  <div id="toast-message"></div>
+</div>
+
+
+  <script src="../JS/Graficas.js"type="module"></script>
+  <script src="../JS/alertas_sensor.js" type="module"></script>
+  <script type="module" src="../JS/autenticacion.js"></script>
+  
+</body>
+</html>

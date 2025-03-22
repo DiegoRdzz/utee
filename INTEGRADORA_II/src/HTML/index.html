@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/alertas_toast.css">
+
+    <title>SecureLab</title>
+</head>
+<body>
+    <nav id="menu-lateral">
+        <div id="menu-lateral-contenido">
+            <div id="Usuario">
+                <img src="../images/pozole.jpeg" id="foto" alt="Avatar">
+    
+                <p id="informacion-usuario">
+                <span class="item-descripcion">
+                    POZOLE1
+                </span>
+                <span class="item-descripcion">
+                    POZOLE2
+                </span></p>
+            </div>    
+            
+            <ul id="menu-items">
+                <li class="menu-items active">
+                    <a href="Graficas.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item-descripcion">
+                            Grafica
+                        </span>
+                    </a>
+                </li>
+                
+                <li class="menu-items">
+                    <a href="Alertas.html">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-descripcion">
+                            Alertas
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="menu-items">
+                    <a href="info_usuario.html">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="item-descripcion">
+                            Informacion de Usuario
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="abrir_btn">
+                <i id="abrir_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+    </div>
+
+    <div id="salir">
+        <button id="salir_btn">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span class="item-descripcion">
+                Salir
+            </span>
+        </button>
+    </div>
+    </nav>
+
+    <main>
+        <h1>SecureLab</h1>
+
+        <div id="info-centro">
+            <h2>Información Importante</h2>
+            <p>Bienvenido a SecureLab. Aquí podrás monitorear y gestionar la seguridad de tus muestras en tiempo real. A través de nuestro sistema, podrás revisar las gráficas que muestran el estado de las muestras, recibir alertas sobre cualquier anomalía y consultar tu información de usuario para mantener todo bajo control. Comienza a explorar las herramientas disponibles para asegurar la calidad y el seguimiento adecuado de tus muestras en el laboratorio.</p>
+        </div>
+    </main>
+
+
+<!-- Badge en la barra de navegación -->
+<!-- Toast Notification -->
+<div id="toast" class="toast">
+    <div id="toast-message"></div>
+</div>
+
+
+    <script src="../JS/index.js"></script>
+    <script src="../JS/alertas_sensor.js" type="module"></script>
+
+    <script src="../JS/cerrar_sesion.js" type="module"></script>
+
+</body>
+</html>

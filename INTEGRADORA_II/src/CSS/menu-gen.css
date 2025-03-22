@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4ea;
+    color: #266965;
+    /*text-align: center;*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* Estilos del menú */
+.navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el logo se divida en líneas */
+  }
+  
+  /* Estilos de los enlaces */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces se acomoden mejor */
+    gap: 15px; /* Reduce el espacio entre los enlaces */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #266965;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 12px; /* Agrega espaciado interno */
+    display: block;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+  
+  /* Ajuste del título para no quedar debajo del menú */
+  h1 {
+    padding-top: 60px; 
+  }
+  

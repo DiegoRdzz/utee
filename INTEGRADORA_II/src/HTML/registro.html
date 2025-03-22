@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+    <title>SecureLab</title>
+    <link rel="stylesheet" href="../CSS/registro.css">
+    <link rel="stylesheet" href="../CSS/alertas.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <img src="../images/integradora2.png" alt="SecureLab Logo" class="logo">
+        <h1 class="Bienvenida">SecureLab</h1>
+
+        <div class="contenido">
+            <div class="cambio_bot">
+                <button id="boton_sesi" class="cambio active">Iniciar sesión</button>
+                <button id="boton_regis" class="cambio">Registrarse</button>
+            </div>
+
+            <div id="login" class="sesi active">
+                <h2 class="Registro">Iniciar Sesión</h2>  
+                <form>
+                    
+                    <input type="email" class="inputs" placeholder="Ingresa tu Email" >
+                    <input type="password" class="inputs" placeholder="Ingresa tu Contraseña" >
+                      <!-- Enlace de "¿Olvidaste tu contraseña?" -->
+                      <a href="#" id="forgotPasswordLink" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </div>
+
+            <div id="register" class="regis">
+                <h2 class="Registro">Registrarse</h2> 
+                <form>
+                    <input type="text" class="inputs" placeholder="Ingresa tu Nombre" >
+                    <!--input type="file" id="foto" name="foto" accept="image/*" required>-->
+                    <input type="email" class="inputs" placeholder="Ingresa tu Email" >
+                    <input type="password" class="inputs" placeholder="Ingresa tu Contraseña" >
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal para recuperar contraseña -->
+     <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Recuperar contraseña</h2>
+            <form id="forgotPasswordForm">
+                <input type="email" id="resetEmail" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit">Enviar correo de recuperación</button>
+            </form>
+        </div>
+    </div>
+
+    
+    
+
+    <script type="module" src="../JS/conexion_bd.js"></script>
+    <script src="../JS/animacion.js"></script>
+    <script src="../JS/validaciones.js"></script>
+    <script type="module" src="../JS/contraseña.js"></script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4ea;
+    color: #333;
+}
+
+/* Menú de navegación */
+.menu-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #266965;
+    color: white;
+    height: 80px;
+}
+
+.menu-navegacion .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.enlaces-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.enlaces-navegacion a:hover {
+    color: #e67e22;
+}
+
+.boton-iniciar-sesion {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton-iniciar-sesion:hover {
+    background-color: #d35400;
+}
+
+/* Sección de pago */
+.seccion-pago {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f4f4ea;
+    min-height: 500px;
+}
+
+.seccion-pago h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #266965;
+}
+
+.descripcion-pago {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.resumen-producto {
+    margin-bottom: 40px;
+}
+
+.lista-resumen {
+    list-style: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lista-resumen li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Métodos de pago */
+.metodos-pago {
+    margin-bottom: 40px;
+}
+
+.metodos-pago h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #266965;
+}
+
+.iconos-pago {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconos-pago img {
+    width: 50px;
+    height: auto;
+}
+
+/* Formulario de pago */
+.formulario-pago {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-pago h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #266965;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.boton-pagar {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.boton-pagar:hover {
+    background-color: #d35400;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
